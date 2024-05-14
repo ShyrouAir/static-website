@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="bg-white flex justify-center items-center flex-col h-60 md:h-screen w-full font-bold font-sans">
+        <span class="text-2xl md:text-6xl">Cid Kagenou</span>
+        <span class="text-xs mt- md:text-lg">Welcome to the blog of <span class="px-2 text-white bg-black">Cid's
+                world</span></span>
+    </div>
+
+    <div
+        class="bg-[url('assets/images/hero.jpeg')] bg-cover h-40 md:h-screen w-full font-bold font-sans flex items-center">
+        <div class="ml-6 md:ml-44">
+            <h1 class="text-white text-xl md:text-6xl">Ciddddd's</h1>
+            <button class="bg-white px-2 text-sm mt-2 md:text-lg">SUBSCRIBE</button>
+        </div>
+    </div>
+
+
+    <div class="md:flex bg-gray-200 mt-2">
+        <!-- Bagian Kiri -->
+        <div class="md:w-3/5">
+            <div class="p-2 bg-gray-200">
+                <div class="bg-white p-2 md:p-12">
+                    <div>
+                        <h1 class="text-center font-bold text-2xl">SHADOW LORD</h1>
+                        <h2 class="text-center"><span class="font-semibold">Master of Darkness</span>, May 13, 2024</h2>
+                        <img class="my-5" src="assets/images/description.png" alt="gambar description">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorem,
+                            fuga optio nam vero alias
+                            quia repudiandae magni, vitae nobis minima dolorum a ea praesentium! Enim maxime
+                            consequuntur,
+                            porro, quaerat reiciendis esse repudiandae ipsam repellendus facere voluptatem blanditiis?
+                            Numquam
+                            vitae nulla deserunt? Sequi necessitatibus veniam fuga reprehenderit? Accusantium qui
+                            maiores
+                            aliquam odio perferendis quidem vel, dolorum deleniti fugit beatae reiciendis officiis
+                            repellat
+                            explicabo eos, alias rerum repudiandae quia atque ab pariatur sunt id! Officia, tenetur
+                            ducimus
+                            maxime aspernatur accusantium delectus! Illo ex ea placeat omnis aperiam hic repellat
+                            laudantium
+                            atque, ad accusamus sunt quasi autem nulla at nesciunt aspernatur perspiciatis?</p>
+
+                        <div class="mt-5 flex justify-around">
+                            <button class="flex items-center px-2 py-1 outline outline-1">
+                                <img class="pr-2" src="assets/images/like.png" alt="like">Like
+                            </button>
+                            <button onclick="toggleReplies()" class="px-2 py-1 bg-black text-white">Replies <span
+                                    class="bg-white px-2 text-black ">1</span></button>
+                        </div>
+                    </div>
+                    <div class="mt-14 hidden" id="replies-one">
+                        <hr>
+                        <div class="mt-5">
+                            <img class="h-20" src="assets/images/profil.jpeg" alt="profil cid">
+                            <div class="mt-3">
+                                <h1 class="text-sm"><span class="font-bold text-base">Cid</span> May 13, 2014, 10:00 PM
+                                </h1>
+                                <h2 class="text-sm">Great blog post! Following</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2 bg-gray-200">
+                <div class="bg-white p-2 md:p-12">
+                    <div>
+                        <h1 class="text-center font-bold text-2xl">SHADOW LORD</h1>
+                        <h2 class="text-center"><span class="font-semibold">Master of Darkness</span>, May 13, 2024</h2>
+                        <img class="my-5" src="assets/images/description.png" alt="gambar description">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorem,
+                            fuga optio nam vero alias
+                            quia repudiandae magni, vitae nobis minima dolorum a ea praesentium! Enim maxime
+                            consequuntur,
+                            porro, quaerat reiciendis esse repudiandae ipsam repellendus facere voluptatem blanditiis?
+                            Numquam
+                            vitae nulla deserunt? Sequi necessitatibus veniam fuga reprehenderit? Accusantium qui
+                            maiores
+                            aliquam odio perferendis quidem vel, dolorum deleniti fugit beatae reiciendis officiis
+                            repellat
+                            explicabo eos, alias rerum repudiandae quia atque ab pariatur sunt id! Officia, tenetur
+                            ducimus
+                            maxime aspernatur accusantium delectus! Illo ex ea placeat omnis aperiam hic repellat
+                            laudantium
+                            atque, ad accusamus sunt quasi autem nulla at nesciunt aspernatur perspiciatis?</p>
+
+                        <div class="mt-5 flex justify-around">
+                            <button class="flex items-center px-2 py-1 outline outline-1">
+                                <img class="pr-2" src="assets/images/like.png" alt="like">Like
+                            </button>
+                            <button onclick="toggleReplies()" class="px-2 py-1 bg-black text-white">Replies <span
+                                    class="bg-white px-2 text-black ">1</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2 bg-gray-200">
+                <div class="bg-white p-2 md:p-12">
+                    <div>
+                        <h1 class="text-center font-bold text-2xl">SHADOW LORD</h1>
+                        <h2 class="text-center"><span class="font-semibold">Master of Darkness</span>, May 13, 2024</h2>
+                        <img class="my-5" src="assets/images/description.png" alt="gambar description">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorem,
+                            fuga optio nam vero alias
+                            quia repudiandae magni, vitae nobis minima dolorum a ea praesentium! Enim maxime
+                            consequuntur,
+                            porro, quaerat reiciendis esse repudiandae ipsam repellendus facere voluptatem blanditiis?
+                            Numquam
+                            vitae nulla deserunt? Sequi necessitatibus veniam fuga reprehenderit? Accusantium qui
+                            maiores
+                            aliquam odio perferendis quidem vel, dolorum deleniti fugit beatae reiciendis officiis
+                            repellat
+                            explicabo eos, alias rerum repudiandae quia atque ab pariatur sunt id! Officia, tenetur
+                            ducimus
+                            maxime aspernatur accusantium delectus! Illo ex ea placeat omnis aperiam hic repellat
+                            laudantium
+                            atque, ad accusamus sunt quasi autem nulla at nesciunt aspernatur perspiciatis?</p>
+
+                        <div class="mt-5 flex justify-around">
+                            <button class="flex items-center px-2 py-1 outline outline-1">
+                                <img class="pr-2" src="assets/images/like.png" alt="like">Like
+                            </button>
+                            <button onclick="toggleReplies()" class="px-2 py-1 bg-black text-white">Replies <span
+                                    class="bg-white px-2 text-black ">1</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Kanan -->
+        <div class="md:w-2/5">
+            <div class="p-2 bg-gray-200">
+                <div class="bg-black">
+                    <img src="assets/images/cid.png" alt="cid">
+                    <div class="text-white mt-3 p-4">
+                        <h1 class="text-xl">Shadow</h1>
+                        <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit culpa enim
+                            eaque odio atque neque nam quas quo voluptatum est, maxime saepe? Quam libero est ut?
+                            Repellat sed itaque praesentium!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2 bg-gray-200">
+                <div>
+                    <div class="bg-black p-2">
+                        <h1 class="text-white font-bold">Popular Posts</h1>
+                    </div>
+                    <!-- LIST POPULAR POST -->
+                    <div class="p-2 mb-1 bg-white hover:bg-gray-300">
+                        <div class="flex items-center">
+                            <img class="h-16" src="assets/images/cid-popular.png" alt="cid popular">
+                            <div class="pl-5">
+                                <h1 class="text-lg font-semibold">Shadow</h1>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="p-2 mb-1 bg-white hover:bg-gray-300">
+                        <div class="flex items-center">
+                            <img class="h-16" src="assets/images/alpha-popular.jpeg" alt="cid popular">
+                            <div class="pl-5">
+                                <h1 class="text-lg font-semibold">Alpha</h1>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="p-2 mb-1 bg-white hover:bg-gray-300">
+                        <div class="flex items-center">
+                            <img class="h-16" src="assets/images/beta-popular.jpg" alt="cid popular">
+                            <div class="pl-5">
+                                <h1 class="text-lg font-semibold">Beta</h1>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="p-2 mb-1 bg-white hover:bg-gray-300">
+                        <div class="flex items-center">
+                            <img class="h-16" src="assets/images/gama-popular.jpg" alt="cid popular">
+                            <div class="pl-5">
+                                <h1 class="text-lg font-semibold">Gama</h1>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-gray-200 p-2">
+                <div class="bg-black text-white p-2 font-bold">
+                    <h1>Adveritise</h1>
+                </div>
+                <div class="bg-white p-4">
+                    <div>
+                        <div class="h-60 bg-gray-200">
+                            Ads
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 p-2">
+                <div class="text-white bg-black p-2 font-bold">
+                    <h1>Tags</h1>
+                </div>
+                <div class="bg-white p-2">
+                    <div>
+                        <span class="text-white bg-black px-2">Saitama</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">New York</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">London</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Kyoto</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Tokyo</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Surabaya</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Jerapa</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Jogja</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Osaka</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Fukuoka</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Nagoya</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Hakone</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Hiroshima</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Yokohama</span>
+                        <span class="text-sm bg-gray-200 px-2 ml-1">Sapporo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 p-2">
+                <div class="bg-black text-white font-bold p-2">
+                    <h1>Inspiration</h1>
+                </div>
+                <div class="p-2 bg-white grid grid-cols-2 gap-2  place-items-center">
+                    <div>
+                        <img class="h-30" src="assets/images/alpha-popular.jpeg" alt="">
+
+                    </div>
+                    <div>
+                        <img class="h-30" src="assets/images/gama-popular.jpg" alt="">
+
+                    </div>
+                    <div>
+
+                        <img class="h-30" src="assets/images/beta-popular.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-30" src="assets/images/cid-popular.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 p-2">
+                <div class="bg-black text-white font-bold p-2">
+                    <h1>Follow Me</h1>
+                </div>
+                <div class="bg-white p-2 flex">
+                    <a class="mr-2" href="">
+                        <img src="assets/images/instagram.png" alt="">
+                    </a>
+                    <a class="mr-2" href="">
+                        <img src="assets/images/facebook.png" alt="">
+                    </a>
+                    <a class="mr-2" href="">
+                        <img src="assets/images/tik-tok.png" alt="">
+                    </a>
+                    <a class="mr-2" href="">
+                        <img src="assets/images/twitter.png" alt="">
+                    </a>
+                    <a class="mr-2" href="">
+                        <img src="assets/images/linkedin.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 p-2">
+                <div class="text-white bg-black p-2 font-bold">
+                    <h1>Subscribe</h1>
+                </div>
+                <div class="bg-white p-2">
+                    <span>Enter your e-mail below and get notified on the latest blog posts.</span>
+                    <input class="border border-gray-300 bg-gray-50 rounded w-full text-sm focus:ring-blue-300 p-1 mt-2"
+                        type="email" name="email" id="email">
+                    <button class="bg-red-600 w-full p-1 text-white font-semibold mt-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="h-48 md:h-40 bg-gray-300 p-4">
+        <div>
+            <a class="flex items-center" href="#">
+                <img src="assets/images/arrow.png" alt="arrow up"><span class="ml-3">To the top</span>
+            </a>
+            <h2 class="mt-5 text-sm font-semibold">
+                Powered by
+                <span class="underline">Sh4d0w</span>
+            </h2>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
